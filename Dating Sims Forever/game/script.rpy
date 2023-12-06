@@ -20,13 +20,15 @@ label start:
     # replace it by adding a file named "eileen happy.png" to the images
     # directory.
 
+    "This is a test to see if this will display properly without having to include a character."
+
+    "I definitely hate working at geeksquad"
+
     show eileen happy
 
-    # These display lines of dialogue.
+    e "Hi! I heard that you hate your job!"
 
-    e "You've created a new Ren'Py game."
-
-    e "Once you add a story, pictures, and music, you can release it to the world!"
+    e "So do I"
 
     # This ends the game.
 
