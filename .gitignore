@@ -4,8 +4,8 @@
 ### Renpy ###
 # Don't track content of these folders #
 ########################################
-cache/
-saves/
+Dating Sim Forever/game/cache/
+Dating Sim Forever/game/saves/
 
 
 # Compiled source #
@@ -23,10 +23,9 @@ saves/
 
 # The log file and other misc things #
 ######################################
-log.txt
+Dating Sims Forever/log.txt
 errors.txt
 traceback.txt
 files.txt
 
 # End of https://www.toptal.com/developers/gitignore/api/renpy
-Dating Sims Forever/log.txt
