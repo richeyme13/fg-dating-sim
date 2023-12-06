@@ -28,8 +28,30 @@ label start:
 
     e "Hi! I heard that you hate your job!"
 
-    e "So do I"
+    e "So do I. Would you want to quit your job and come join me on an adventure?"
+
+    menu:
+
+        "Yes for the love of god":
+            jump yes
+        
+        "No I think I would much rather suffer without the benefits":
+            jump no
+
+    label yes:
+
+        e "Yes! You deserve so much more than working full time hours with part time benefits!"
+
+        e "Let's go!!"
+        
+        jump end
+    
+    label no:
+    
+        e "Oh......................."
+
+        e "Are you even human...?"
 
     # This ends the game.
-
-    return
+    label end:
+        return
