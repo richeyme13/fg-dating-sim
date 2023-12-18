@@ -4,8 +4,8 @@
 ### Renpy ###
 # Don't track content of these folders #
 ########################################
-cache/
-saves/
+Dating Sim Forever/game/cache/
+Dating Sim Forever/game/saves/
 
 
 # Compiled source #
@@ -23,7 +23,7 @@ saves/
 
 # The log file and other misc things #
 ######################################
-log.txt
+C:\Dating_Sims_Forever\dating-sim\Dating Sims Forever\log.txt
 errors.txt
 traceback.txt
 files.txt
