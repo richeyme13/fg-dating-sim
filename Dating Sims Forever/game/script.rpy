@@ -31,16 +31,27 @@ label start:
                 fg_points['Janelle'] = 15
                 fg_points['Esther'] = 10
                 fg_points['Kat'] = 0
-         #   $ fg_points["Janelle"], fg_points["Esther"] = 25, 15, 10   
         "Chef":
-            $ pc_background = "Chef"
-           # $ fg_points["Esther"], fg_points["Kat"], fg_points["Irene"] = 25, 15, 10
+            python:
+                pc_background = "Chef"
+                fg_points['Irene'] = 10
+                fg_points['Janelle'] = 0
+                fg_points['Esther'] = 25
+                fg_points['Kat'] = 15
         "Writer":
-            $ pc_background = "Writer"
-          #  $ fg_points["Janelle"], fg_points["Esther"], fg_points["Kat"] = 25, 15, 10
+            python:
+                pc_background = "Writer"
+                fg_points['Irene'] = 0
+                fg_points['Janelle'] = 25
+                fg_points['Esther'] = 15
+                fg_points['Kat'] = 10
         "Courtier":
-            $ pc_background = "Courtier"
-           # $ fg_points["Kat"], fg_points["Irene"], fg_points["Janelle"] = 25, 15, 10
+            python:
+                pc_background = "Courtier"
+                fg_points['Irene'] = 15
+                fg_points['Janelle'] = 10
+                fg_points['Esther'] = 0
+                fg_points['Kat'] = 25
 
     # Show a background. This uses a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the
