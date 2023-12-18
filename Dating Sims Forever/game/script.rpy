@@ -8,9 +8,7 @@ define k = Character("Kat") # Adam's fg
 define i = Character("Irene") # Cinderella's fg
 define j = Character("Janelle") # Aurora's fg
 
-# Global variables
 
-$ pc_background = "" # player character's background set to empty string to be changed later
 
 # The game starts here.
 
@@ -18,20 +16,31 @@ $ pc_background = "" # player character's background set to empty string to be c
 
 label start:
 
-    label choose_your_character:
+    # Global variables
+    $ pc_background = "" # player character's background set to empty string to be changed later
+    $ fg_points = dict() # dictionary of points PC earns with the FGs
 
     "Please choose a background for your character. This is a test to see if the variable updates like I think it will"
 
     menu:
 
         "Tailor":
-            $ pc_background = "Tailor"    
+            python:
+                pc_background = "Tailor"
+                fg_points['Irene'] = 25
+                fg_points['Janelle'] = 15
+                fg_points['Esther'] = 10
+                fg_points['Kat'] = 0
+         #   $ fg_points["Janelle"], fg_points["Esther"] = 25, 15, 10   
         "Chef":
             $ pc_background = "Chef"
+           # $ fg_points["Esther"], fg_points["Kat"], fg_points["Irene"] = 25, 15, 10
         "Writer":
             $ pc_background = "Writer"
+          #  $ fg_points["Janelle"], fg_points["Esther"], fg_points["Kat"] = 25, 15, 10
         "Courtier":
             $ pc_background = "Courtier"
+           # $ fg_points["Kat"], fg_points["Irene"], fg_points["Janelle"] = 25, 15, 10
 
     # Show a background. This uses a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the
