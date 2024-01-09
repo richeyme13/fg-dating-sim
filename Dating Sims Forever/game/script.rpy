@@ -20,6 +20,10 @@ label start:
     $ pc_background = "" # player character's background set to empty string to be changed later
     $ fg_points = dict() # dictionary of points PC earns with the FGs
 
+    
+    # for testing the mini games without having to go thru the story first
+    call screen mix_ingredients
+
     "Please choose a background for your character. This is a test to see if the variable updates like I think it will"
 
     menu:
@@ -58,6 +62,7 @@ label start:
     # images directory to show it.
 
     scene bg room
+
 
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "eileen happy.png" to the images
