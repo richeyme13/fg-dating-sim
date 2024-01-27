@@ -9,10 +9,16 @@ define i = Character("Irene") # Cinderella's fg
 define j = Character("Janelle") # Aurora's fg
 
 
+# used for the drag and drop, subject to change location
+init python:
+    def drag_placed(drags,drop):
+        if not drop:
+            return
 
-# The game starts here.
+        store.draggable = drags[0].drag_name
+        store.droppable = drop.drag_name
 
-
+        return True
 
 label start:
 
