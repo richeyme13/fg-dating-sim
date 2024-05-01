@@ -9,29 +9,31 @@ define i = Character("Irene") # Cinderella's fg
 define j = Character("Janelle") # Aurora's fg
 
 
-# used for the drag and drop, subject to change location
-init python:
-    def drag_placed(drags,drop):
-        if not drop:
-            return
-
-        store.draggable = drags[0].drag_name
-        store.droppable = drop.drag_name
-
-        return True
-
 label start:
 
     # Global variables
     $ pc_background = "" # player character's background set to empty string to be changed later
     $ fg_points = dict() # dictionary of points PC earns with the FGs
 
-    
-    # for testing the mini games without having to go thru the story first
+    # should display the choices
+    label chef_date:
+
+    " Before you lies 3 recipe cards. Which one would you like to choose? "
+    menu:  
+        "Easy":
+            python:
+                goal = easy_recipe
+        "Medium":
+            python:
+                goal = med_recipe
+        "Hard":
+            python:
+                goal = hard_recipe
     call screen mix_ingredients
 
     "Please choose a background for your character. This is a test to see if the variable updates like I think it will"
 
+    # player chooses their bg
     menu:
 
         "Tailor":
@@ -77,7 +79,7 @@ label start:
 
     show eileen happy
 
-    e "Hi! I heard that you hate your job!"
+    e "Hi! u hateI heard that yo your job!"
 
     e "So do I. Would you want to quit your job and come join me on an adventure?"
 
