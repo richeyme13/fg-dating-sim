@@ -7,7 +7,7 @@ init python:
     ### Lists of all the recipes, should give player the option to choose before they start ###
 
     # NOTE: DO NOT CHANGE THESE. Make a copy to use in game for points
-    easy_recipe = []
+    easy_recipe = ["eggs", "flour","oil"]
     med_recipe = []
     hard_recipe = []
 
