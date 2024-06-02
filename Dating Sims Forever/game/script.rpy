@@ -48,6 +48,9 @@ label start:
             "Hard":
                 python:
                     goal = hard_recipe
+
+        $ create_drag_group(goal, med_recipe)
+
         call screen mix_ingredients
 
     "Please choose a background for your character. This is a test to see if the variable updates like I think it will"

@@ -29,3 +29,8 @@
 */files.txt
 
 # End of https://www.toptal.com/developers/gitignore/api/renpy
+*.save
+Dating Sims Forever/log.txt
+/Dating Sims Forever/game/saves
+*.rpyc
+*.rpyb

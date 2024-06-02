@@ -4,10 +4,10 @@
         "**/*.rpa": true,
         "**/*.rpymc": true,
         "**/cache/": true,
-	"**/saves/": true,
-	"**/log.txt": true,
-	"**/errors.txt": true,
-	"**/traceback.txt": true,
-	"**/files.txt": true
+        "**/saves/": true,
+        "**/log.txt": true,
+        "**/errors.txt": true,
+        "**/traceback.txt": true,
+        "**/files.txt": true
     }
 }
