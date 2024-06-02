@@ -7,7 +7,7 @@ define e = Character("Esther") # Adrian's fg
 define k = Character("Kat") # Adam's fg
 define i = Character("Irene") # Cinderella's fg
 define j = Character("Janelle") # Aurora's fg
-
+define h = Character("Host") # Host of the show
 
 label start:
 
@@ -15,21 +15,40 @@ label start:
     $ pc_background = "" # player character's background set to empty string to be changed later
     $ fg_points = dict() # dictionary of points PC earns with the FGs
 
-    # should display the choices
+
+    label intro_start:
+        
+        # show images of the ballroom, outdoor dinner date spot, and hotel lobby
+    
+        h "The stories always call love \"wonderfull\" or \"exciting\" or... \"Magical\""
+
+        #show host happy, centered, happy in ballroom
+
+        h "But in a world where magic is all around us, how do we know it's the real thing?"
+
+        h "For those among us whose lives revolve around their abilities, perhaps it is actually something more normal that would feel more real."
+
+        h "So we have organized a simple setting, with simple dates, in which our contestants can find their \"someone special\"."
+
+        h "And at the end, any couple who chooses each other will get to set off on a lovely holiday!"
+
+        h "FIrst things first, let's meet our enchanting Fairy Godmothers, who are all vying for love over the course of the show!"
+
+    # TO BE MOVED
     label chef_date:
 
-    " Before you lies 3 recipe cards. Which one would you like to choose? "
-    menu:  
-        "Easy":
-            python:
-                goal = easy_recipe
-        "Medium":
-            python:
-                goal = med_recipe
-        "Hard":
-            python:
-                goal = hard_recipe
-    call screen mix_ingredients
+        " Before you lies 3 recipe cards. Which one would you like to choose? "
+        menu:  
+            "Easy":
+                python:
+                    goal = easy_recipe
+            "Medium":
+                python:
+                    goal = med_recipe
+            "Hard":
+                python:
+                    goal = hard_recipe
+        call screen mix_ingredients
 
     "Please choose a background for your character. This is a test to see if the variable updates like I think it will"
 
