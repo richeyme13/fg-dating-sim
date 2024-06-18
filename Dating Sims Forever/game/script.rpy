@@ -49,7 +49,7 @@ label start:
                 python:
                     goal = hard_recipe
 
-        $ create_drag_group(goal, med_recipe)
+        $ create_drag_group(goal)
 
         call screen mix_ingredients
 
